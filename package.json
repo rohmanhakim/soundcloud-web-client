@@ -18,6 +18,13 @@
     "url": "https://github.com/rohmanhakim/soundcloud-web-client/issues"
   },
   "homepage": "https://github.com/rohmanhakim/soundcloud-web-client#readme",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-2"
+    ]
+  },
   "devDependencies": {
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
@@ -31,7 +38,7 @@
     "jsdom": "^9.2.1",
     "mocha": "^2.5.3",
     "react-addons-test-utils": "^15.1.0",
-    "react-hot-loader": "^1.3.0",
+    "react-hot-loader": "^3.0.0-beta.6",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
