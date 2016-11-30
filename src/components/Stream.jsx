@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import { connect } from  'react-redux'
 
 const Stream = ({tracks = []}) => {
   return (
@@ -12,4 +13,11 @@ const Stream = ({tracks = []}) => {
   )
 }
 
-export default Stream
+function mapStateToProps(state){
+  const tracks = state.track;
+  return {
+    tracks
+  }
+}
+
+export default connect(mapStateToProps)(Stream);
